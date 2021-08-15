@@ -15,7 +15,7 @@ class CreateUserServicesTable extends Migration
     {
         Schema::create('user_services', function (Blueprint $table) {
             $table->id();
-            $table->string('status');
+            $table->string('status', 20);
             $table->float('price');
 
             $table->bigInteger('user_id')->unsigned();
